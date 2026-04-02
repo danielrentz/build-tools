@@ -1,6 +1,6 @@
 {
   "name": "@daniel.rentz/build-tools",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Development helpers and shared configuration for other repositories.",
   "homepage": "https://github.com/danielrentz/build-tools#readme",
   "bugs": {
