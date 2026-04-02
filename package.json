@@ -1,0 +1,46 @@
+{
+  "name": "@daniel.rentz/build-tools",
+  "version": "0.0.1",
+  "description": "Development helpers and shared configuration for other repositories.",
+  "homepage": "https://github.com/danielrentz/build-tools#readme",
+  "bugs": {
+    "url": "https://github.com/danielrentz/build-tools/issues"
+  },
+  "license": "MIT",
+  "author": "Daniel Rentz <daniel.rentz@gmx.de>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielrentz/build-tools.git"
+  },
+  "files": [
+    "CHANGELOG.md",
+    "dist/"
+  ],
+  "type": "module",
+  "exports": {
+    "./oxfmt": "./dist/oxfmt/index.mjs",
+    "./oxlint": "./dist/oxlint/index.mjs",
+    "./tsdown": "./dist/tsdown/index.mjs",
+    "./tsconfig.json": "./dist/tsconfig/tsconfig.json",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "fmt": "oxfmt",
+    "lint": "oxlint",
+    "prepack": "pnpm build",
+    "test": "echo no tests defined"
+  },
+  "dependencies": {
+    "@arethetypeswrong/core": "^0.18.2",
+    "oxfmt": "^0.43.0",
+    "oxlint": "^1.58.0",
+    "oxlint-tsgolint": "^0.19.0",
+    "publint": "^0.3.18",
+    "tsdown": "^0.21.7"
+  },
+  "engines": {
+    "node": ">=22.18"
+  },
+  "packageManager": "pnpm@10.33.0"
+}
