@@ -29,7 +29,8 @@
     "fmt": "oxfmt",
     "lint": "oxlint",
     "prepack": "pnpm build",
-    "test": "echo no tests defined"
+    "test": "echo no tests defined",
+    "verify": "pnpm audit && pnpm build && pnpm lint && pnpm test"
   },
   "dependencies": {
     "@arethetypeswrong/core": "^0.18.2",
