@@ -1,5 +1,10 @@
 # Changelog
 
+## `0.0.4` – 2026-Jun-23
+
+- Fixed: Missing export for `tsconfig.json`
+- Chore: Add unit tests to catch build errors
+
 ## `0.0.3` – 2026-Jun-23
 
 - Added: [tsdown] Generate `exports` field in `package.json`

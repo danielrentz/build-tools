@@ -1,6 +1,6 @@
 {
   "name": "@daniel.rentz/build-tools",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Development helpers and shared configuration for other repositories.",
   "homepage": "https://github.com/danielrentz/build-tools#readme",
   "bugs": {
@@ -25,14 +25,15 @@
     "./oxfmt": "./dist/oxfmt/index.mjs",
     "./oxlint": "./dist/oxlint/index.mjs",
     "./tsdown": "./dist/tsdown/index.mjs",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./tsconfig.json": "./dist/tsconfig/tsconfig.json"
   },
   "scripts": {
     "build": "tsdown",
     "fmt": "oxfmt",
     "lint": "oxlint",
     "prepack": "pnpm build",
-    "test": "echo no tests defined",
+    "test": "vitest run",
     "verify": "pnpm audit && pnpm peers check && pnpm build && pnpm lint && pnpm test"
   },
   "dependencies": {
@@ -42,5 +43,8 @@
     "oxlint-tsgolint": "^0.23.0",
     "publint": "^0.3.21",
     "tsdown": "^0.22.3"
+  },
+  "devDependencies": {
+    "vitest": "^4.1.9"
   }
 }
