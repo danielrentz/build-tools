@@ -1,6 +1,11 @@
 # Changelog
 
-## Unreleased
+## `0.0.3` – 2026-Jun-23
+
+- Added: [tsdown] Generate `exports` field in `package.json`
+- Added: [tsdown] Generate declaration sourcemaps
+- Added: [tsconfig] Set `resolveJsonModule: true` in configuration
+- Chore: Bump all dependencies
 
 ## `0.0.1` – 2026-Apr-02
 

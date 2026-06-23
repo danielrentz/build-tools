@@ -15,6 +15,7 @@
     "module": "esnext",
     "moduleResolution": "bundler",
     "noUncheckedSideEffectImports": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext"
