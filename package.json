@@ -12,15 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/danielrentz/build-tools.git"
   },
-  "type": "module",
-  "engines": {
-    "node": "^22.18.0 || >=24.11.0"
-  },
-  "packageManager": "pnpm@11.22.0",
   "files": [
     "CHANGELOG.md",
     "dist/"
   ],
+  "type": "module",
   "exports": {
     "./oxfmt": "./dist/oxfmt/index.mjs",
     "./oxlint": "./dist/oxlint/index.mjs",
@@ -62,5 +58,9 @@
     "tsdown": {
       "optional": true
     }
-  }
+  },
+  "engines": {
+    "node": "^22.18.0 || >=24.11.0"
+  },
+  "packageManager": "pnpm@11.22.0"
 }

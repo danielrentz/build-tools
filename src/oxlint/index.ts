@@ -9,11 +9,7 @@ export function defineConfig(options?: OxlintConfig): OxlintConfig {
       suspicious: 'error',
       ...options?.categories,
     },
-    plugins: [
-      'import',
-      'promise',
-      ...options?.plugins ?? [],
-    ],
+    plugins: ['import', 'promise', ...(options?.plugins ?? [])],
     options: {
       reportUnusedDisableDirectives: 'error',
       typeAware: true,
