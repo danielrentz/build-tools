@@ -1,7 +1,8 @@
-import { type UserConfig, defineConfig as tsDefineConfig } from 'tsdown'
+import type { UserConfig } from 'tsdown'
+import * as tsdown from 'tsdown'
 
 export function defineConfig(options?: UserConfig): UserConfig {
-  return tsDefineConfig({
+  return tsdown.defineConfig({
     entry: 'src/index.ts',
     tsconfig: 'src/tsconfig.json',
     deps: { skipNodeModulesBundle: true },

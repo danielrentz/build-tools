@@ -1,6 +1,6 @@
 {
   "name": "@daniel.rentz/build-tools",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Development helpers and shared configuration for other repositories.",
   "homepage": "https://github.com/danielrentz/build-tools#readme",
   "bugs": {
@@ -42,11 +42,25 @@
     "publint": "^0.3.23"
   },
   "devDependencies": {
+    "oxfmt": "^0.63.0",
+    "oxlint": "^1.78.0",
+    "tsdown": "^0.22.14",
     "vitest": "^4.1.10"
   },
   "peerDependencies": {
-    "oxfmt": "^0.56.0",
-    "oxlint": "^1.71.0",
+    "oxfmt": "^0.63.0",
+    "oxlint": "^1.78.0",
     "tsdown": "^0.22.0"
+  },
+  "peerDependenciesMeta": {
+    "oxfmt": {
+      "optional": true
+    },
+    "oxlint": {
+      "optional": true
+    },
+    "tsdown": {
+      "optional": true
+    }
   }
 }

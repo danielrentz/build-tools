@@ -1,7 +1,8 @@
-import { type OxfmtConfig, defineConfig as oxDefineConfig } from 'oxfmt'
+import type { OxfmtConfig } from 'oxfmt'
+import * as oxfmt from 'oxfmt'
 
 export function defineConfig(options?: OxfmtConfig): OxfmtConfig {
-  return oxDefineConfig({
+  return oxfmt.defineConfig({
     printWidth: 320,
     semi: false,
     singleQuote: true,

@@ -1,13 +1,19 @@
-import { type OxlintConfig, defineConfig as oxDefineConfig } from 'oxlint'
+import type { OxlintConfig } from 'oxlint'
+import * as oxlint from 'oxlint'
 
 export function defineConfig(options?: OxlintConfig): OxlintConfig {
-  return oxDefineConfig({
+  return oxlint.defineConfig({
     ...options,
     categories: {
       correctness: 'error',
       suspicious: 'error',
       ...options?.categories,
     },
+    plugins: [
+      'import',
+      'promise',
+      ...options?.plugins ?? [],
+    ],
     options: {
       reportUnusedDisableDirectives: 'error',
       typeAware: true,
@@ -16,6 +22,16 @@ export function defineConfig(options?: OxlintConfig): OxlintConfig {
     },
     rules: {
       eqeqeq: 'error',
+      'import/first': 'error',
+      'import/no-anonymous-default-export': 'error',
+      'import/no-cycle': 'error',
+      'import/no-duplicates': 'error',
+      'import/no-mutable-exports': 'error',
+      'import/no-named-default': 'error',
+      'import/unambiguous': 'error',
+      'promise/no-return-wrap': 'error',
+      'promise/param-names': 'error',
+      'promise/prefer-catch': 'error',
       ...options?.rules,
     },
   })

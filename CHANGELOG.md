@@ -1,5 +1,14 @@
 # Changelog
 
+## `0.0.6` – 2026-Aug-18
+
+- Added: [oxlint] Activate plugins `import` and `promise` and a few more rules
+
+## `0.0.5` – 2026-Aug-18
+
+- Chore: move commands to peer dependencies
+- Chore: Bump all dependencies
+
 ## `0.0.4` – 2026-Jun-23
 
 - Fixed: Missing export for `tsconfig.json`
