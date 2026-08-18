@@ -5,7 +5,7 @@ export function defineConfig(options?: UserConfig): UserConfig {
   return tsdown.defineConfig({
     entry: 'src/index.ts',
     tsconfig: 'src/tsconfig.json',
-    deps: { skipNodeModulesBundle: true },
+    deps: { neverBundle: true },
     dts: { sourcemap: true },
     exports: true,
     publint: true,
