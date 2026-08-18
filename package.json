@@ -16,7 +16,7 @@
   "engines": {
     "node": "^22.18.0 || >=24.11.0"
   },
-  "packageManager": "pnpm@11.8.0",
+  "packageManager": "pnpm@11.22.0",
   "files": [
     "CHANGELOG.md",
     "dist/"
@@ -37,14 +37,16 @@
     "verify": "pnpm audit && pnpm peers check && pnpm build && pnpm lint && pnpm test"
   },
   "dependencies": {
-    "@arethetypeswrong/core": "^0.18.4",
-    "oxfmt": "^0.56.0",
-    "oxlint": "^1.71.0",
-    "oxlint-tsgolint": "^0.23.0",
-    "publint": "^0.3.21",
-    "tsdown": "^0.22.3"
+    "@arethetypeswrong/core": "^0.18.5",
+    "oxlint-tsgolint": "^7.0.2001",
+    "publint": "^0.3.23"
   },
   "devDependencies": {
-    "vitest": "^4.1.9"
+    "vitest": "^4.1.10"
+  },
+  "peerDependencies": {
+    "oxfmt": "^0.56.0",
+    "oxlint": "^1.71.0",
+    "tsdown": "^0.22.0"
   }
 }
