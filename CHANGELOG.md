@@ -1,12 +1,17 @@
 # Changelog
 
+## `0.0.7` – 2026-Sep-08
+
+- Added: Install `oxlint`, `oxfmt`, and `tsdown`
+- Added: Bin scripts to call these tools
+
 ## `0.0.6` – 2026-Aug-18
 
 - Added: [oxlint] Activate plugins `import` and `promise` and a few more rules
 
 ## `0.0.5` – 2026-Aug-18
 
-- Chore: move commands to peer dependencies
+- Chore: Move commands to peer dependencies
 - Chore: Bump all dependencies
 
 ## `0.0.4` – 2026-Jun-23
