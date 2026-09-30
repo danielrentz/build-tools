@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [0.0.9] - 2026-09-30
+
+- Chore: Bump `oxlint` to 1.86.0, `oxlint-tsgolint` to 7.0.2003, and `oxfmt` to 0.71.0
+
 ## [0.0.8] - 2026-09-30
 
 - Added: GitHub action `pnpm-build` to set up pnpm and nodejs, and to run audit, peers check, build, lint, and test

@@ -1,6 +1,6 @@
 {
   "name": "@daniel.rentz/build-tools",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Development helpers and shared configuration for other repositories.",
   "keywords": [
     "build",
@@ -54,15 +54,15 @@
   },
   "dependencies": {
     "@arethetypeswrong/core": "^0.18.5",
-    "oxfmt": "^0.66.0",
-    "oxlint": "^1.81.0",
-    "oxlint-tsgolint": "^7.0.2001",
+    "oxfmt": "^0.71.0",
+    "oxlint": "^1.86.0",
+    "oxlint-tsgolint": "^7.0.2003",
     "publint": "^0.3.24",
     "tsdown": "^0.23.0"
   },
   "devDependencies": {
-    "@types/node": "^26.4.1",
-    "vitest": "^5.0.0"
+    "@types/node": "^26.6.3",
+    "vitest": "^5.0.2"
   },
   "engines": {
     "node": "^22.18.0 || >=24.11.0"
