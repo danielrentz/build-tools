@@ -1,0 +1,26 @@
+name: Build pnpm package
+description: Sets up pnpm and nodejs, then runs audit, peers check, build, lint, and test.
+
+inputs:
+  runtime:
+    description: The nodejs runtime to be installed by pnpm
+    default: node@24
+
+runs:
+  using: composite
+  steps:
+    - name: Setup pnpm and nodejs
+      uses: pnpm/setup@v2
+      with:
+        runtime: ${{ inputs.runtime }}
+
+    - shell: bash
+      run: pnpm audit
+    - shell: bash
+      run: pnpm peers check
+    - shell: bash
+      run: pnpm build
+    - shell: bash
+      run: pnpm lint
+    - shell: bash
+      run: pnpm test

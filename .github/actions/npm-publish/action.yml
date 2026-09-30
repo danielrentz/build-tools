@@ -1,0 +1,17 @@
+name: Publish npm package
+description: Publishes the package to npm, after checking that the tag matches the version in package.json.
+
+runs:
+  using: composite
+  steps:
+    - name: Publish package
+      shell: bash
+      run: |
+        TAG="${GITHUB_REF#refs/tags/}"
+        TAG_VERSION="${TAG#v}"
+        FILE_VERSION=$(node -p "require('./package.json').version")
+        if [ "$TAG_VERSION" != "$FILE_VERSION" ]; then
+          echo "Version mismatch: tag=$TAG_VERSION, package.json=$FILE_VERSION"
+          exit 1
+        fi
+        pnpm publish --access public --provenance --no-git-checks
