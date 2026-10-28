@@ -54,15 +54,15 @@
   },
   "dependencies": {
     "@arethetypeswrong/core": "^0.18.5",
-    "oxfmt": "^0.71.0",
-    "oxlint": "^1.86.0",
-    "oxlint-tsgolint": "^7.0.2003",
-    "publint": "^0.3.24",
-    "tsdown": "^0.23.0"
+    "oxfmt": "^0.75.0",
+    "oxlint": "^1.89.0",
+    "oxlint-tsgolint": "^7.0.2005",
+    "publint": "^0.3.25",
+    "tsdown": "^0.23.2"
   },
   "devDependencies": {
-    "@types/node": "^26.6.3",
-    "vitest": "^5.0.2"
+    "@types/node": "^26.6.5",
+    "vitest": "^5.0.5"
   },
   "engines": {
     "node": "^22.18.0 || >=24.11.0"
