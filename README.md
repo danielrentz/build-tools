@@ -107,11 +107,11 @@ The repository contains composite actions that can be used in GitHub workflows o
 
 ### `pnpm-build`
 
-Sets up pnpm and Node.js via [`pnpm/setup`](https://github.com/pnpm/setup), then runs `pnpm audit`, `pnpm peers check`, `pnpm build`, `pnpm lint`, and `pnpm test`.
+Sets up Node.js via [`actions/setup-node`](https://github.com/actions/setup-node) and pnpm via [`pnpm/setup`](https://github.com/pnpm/setup), then runs `pnpm audit`, `pnpm peers check`, `pnpm build`, `pnpm lint`, and `pnpm test`.
 
-| Input     | Description                             | Default   |
-| --------- | --------------------------------------- | --------- |
-| `runtime` | The Node.js runtime to install via pnpm | `node@24` |
+| Input          | Description                    | Default |
+| -------------- | ------------------------------ | ------- |
+| `node-version` | The Node.js version to install | `24`    |
 
 ### `npm-publish`
 

@@ -2,17 +2,20 @@ name: Build pnpm package
 description: Sets up pnpm and nodejs, then runs audit, peers check, build, lint, and test.
 
 inputs:
-  runtime:
-    description: The nodejs runtime to be installed by pnpm
-    default: node@24
+  node-version:
+    description: The nodejs version to be installed
+    default: "24"
 
 runs:
   using: composite
   steps:
-    - name: Setup pnpm and nodejs
-      uses: pnpm/setup@v2
+    - name: Setup nodejs
+      uses: actions/setup-node@v7
       with:
-        runtime: ${{ inputs.runtime }}
+        node-version: ${{ inputs.node-version }}
+
+    - name: Setup pnpm
+      uses: pnpm/setup@v2
 
     - shell: bash
       run: pnpm audit

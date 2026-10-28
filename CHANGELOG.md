@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Changed: GitHub action `pnpm-build` installs Node.js via `actions/setup-node` instead of downloading it from nodejs.org, input `runtime` replaced by `node-version`
+
 ## [0.0.10] - 2026-10-28
 
 - Chore: Bump `oxlint` to 1.89.0, `oxlint-tsgolint` to 7.0.2005, `oxfmt` to 0.75.0, and `tsdown` to 0.23.2
