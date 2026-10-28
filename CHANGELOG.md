@@ -8,6 +8,8 @@
 
 ## [0.0.10] - 2026-10-28
 
+Not published to npm due to a failed release build, all changes are contained in 0.0.11.
+
 - Chore: Bump `oxlint` to 1.89.0, `oxlint-tsgolint` to 7.0.2005, `oxfmt` to 0.75.0, and `tsdown` to 0.23.2
 
 ## [0.0.9] - 2026-09-30
