@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [0.0.11] - 2026-10-28
+
 - Changed: GitHub action `pnpm-build` installs Node.js via `actions/setup-node` instead of downloading it from nodejs.org, input `runtime` replaced by `node-version`
 
 ## [0.0.10] - 2026-10-28
@@ -56,7 +58,8 @@
 - Added: Base configuration for `oxfmt`
 - Added: Base `tsconfig.json` configuration
 
-[Unreleased]: https://github.com/danielrentz/build-tools/compare/v0.0.10...HEAD
+[Unreleased]: https://github.com/danielrentz/build-tools/compare/v0.0.11...HEAD
+[0.0.11]: https://github.com/danielrentz/build-tools/compare/v0.0.10...v0.0.11
 [0.0.10]: https://github.com/danielrentz/build-tools/compare/v0.0.9...v0.0.10
 [0.0.9]: https://github.com/danielrentz/build-tools/compare/v0.0.8...v0.0.9
 [0.0.8]: https://github.com/danielrentz/build-tools/compare/v0.0.7...v0.0.8
