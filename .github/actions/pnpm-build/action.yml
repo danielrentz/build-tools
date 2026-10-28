@@ -9,11 +9,13 @@ inputs:
 runs:
   using: composite
   steps:
+    # downloads from GitHub instead of nodejs.org, which is often too slow for pnpm's fetch timeout
     - name: Setup nodejs
       uses: actions/setup-node@v7
       with:
         node-version: ${{ inputs.node-version }}
 
+    # no runtime input, uses the nodejs installed in the previous step
     - name: Setup pnpm
       uses: pnpm/setup@v2
 
