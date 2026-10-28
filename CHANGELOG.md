@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [0.0.10] - 2026-10-28
+
+- Chore: Bump `oxlint` to 1.89.0, `oxlint-tsgolint` to 7.0.2005, `oxfmt` to 0.75.0, and `tsdown` to 0.23.2
+
 ## [0.0.9] - 2026-09-30
 
 - Chore: Bump `oxlint` to 1.86.0, `oxlint-tsgolint` to 7.0.2003, and `oxfmt` to 0.71.0
@@ -50,7 +54,8 @@
 - Added: Base configuration for `oxfmt`
 - Added: Base `tsconfig.json` configuration
 
-[Unreleased]: https://github.com/danielrentz/build-tools/compare/v0.0.9...HEAD
+[Unreleased]: https://github.com/danielrentz/build-tools/compare/v0.0.10...HEAD
+[0.0.10]: https://github.com/danielrentz/build-tools/compare/v0.0.9...v0.0.10
 [0.0.9]: https://github.com/danielrentz/build-tools/compare/v0.0.8...v0.0.9
 [0.0.8]: https://github.com/danielrentz/build-tools/compare/v0.0.7...v0.0.8
 [0.0.7]: https://github.com/danielrentz/build-tools/compare/v0.0.6...v0.0.7

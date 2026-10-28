@@ -1,6 +1,6 @@
 {
   "name": "@daniel.rentz/build-tools",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Development helpers and shared configuration for other repositories.",
   "keywords": [
     "build",
