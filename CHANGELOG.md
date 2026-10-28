@@ -50,7 +50,8 @@
 - Added: Base configuration for `oxfmt`
 - Added: Base `tsconfig.json` configuration
 
-[Unreleased]: https://github.com/danielrentz/build-tools/compare/v0.0.8...HEAD
+[Unreleased]: https://github.com/danielrentz/build-tools/compare/v0.0.9...HEAD
+[0.0.9]: https://github.com/danielrentz/build-tools/compare/v0.0.8...v0.0.9
 [0.0.8]: https://github.com/danielrentz/build-tools/compare/v0.0.7...v0.0.8
 [0.0.7]: https://github.com/danielrentz/build-tools/compare/v0.0.6...v0.0.7
 [0.0.6]: https://github.com/danielrentz/build-tools/compare/v0.0.5...v0.0.6
